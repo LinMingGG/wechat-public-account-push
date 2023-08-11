@@ -638,7 +638,7 @@ describe('services', () => {
     ]
     expect(getBirthdayMessage()).toEqual('今天是 老婆 的生日哦，祝老婆生日快乐！ \n距离 李四 的0岁生日还有100天 \n距离 被搭讪纪念日 还有310天 \n距离 结婚纪念日 还有312天 \n'.trimStart())
     config.SWITCH = {
-      birthdayMessage: false,
+      birthdayMessage: true,
     }
     expect(getBirthdayMessage()).toEqual('')
   })
